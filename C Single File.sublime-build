@@ -8,8 +8,8 @@
 	[
 		{
 			"name": "Run",
-			"shell_cmd": "gcc \"$file_name\" -o \"$file_base_name.exe\" && start cmd /K \"$file_base_name.exe\" ^& pause ^& exit"
+			"shell_cmd": "gcc \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+			"interactive": true,
 		}
-	],
-	"quiet": true
+	]
 }

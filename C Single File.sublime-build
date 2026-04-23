@@ -9,7 +9,9 @@
 		{
 			"name": "Run",
 			"shell_cmd": "gcc \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
-			"interactive": true,
+			"target": "terminus_open",
+			"post_window_hooks": [["new_pane", {}]],
+			"auto_close": false
 		}
 	]
 }
